@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RazorX | The Future of Payments</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                900: '#0c4a6e',
+              },
+              accent: {
+                500: '#6366f1',
+                600: '#4f46e5',
+              }
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'marquee': 'marquee 25s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      body { overflow-x: hidden; }
+    </style>
+
+    <!-- ✅ WORKING IMPORT MAP -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19",
+        "react-dom": "https://esm.sh/react-dom@19",
+        "@react-three/fiber": "https://esm.sh/@react-three/fiber@9",
+        "@react-three/drei": "https://esm.sh/@react-three/drei@10",
+        "three": "https://esm.sh/three@0.181.2",
+        "lucide-react": "https://esm.sh/lucide-react@0.554.0",
+        "framer-motion": "https://esm.sh/framer-motion@12"
+      }
+    }
+    </script>
+  </head>
+
+  <body class="bg-slate-50 dark:bg-[#0a0a0a] text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+
+    <!-- ✅ React render script -->
+    <!-- <script type="module">
+      import React from "react";
+      import ReactDOM from "react-dom";
+
+      function App() {
+        return (
+          <div class="p-10 text-center text-3xl font-bold text-brand-600">
+            ✅ React Loaded Successfully!
+          </div>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(
+        React.createElement(App)
+      );
+    </script> -->
+      <script type="module" src="/src/main.tsx"></script>
+
+  </body>
+</html>
