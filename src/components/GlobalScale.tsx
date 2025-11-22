@@ -1,8 +1,7 @@
-import React, { useRef, useMemo } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Sphere, Stars } from '@react-three/drei';
-import * as THREE from 'three';
-import { Mesh, MathUtils, BackSide } from 'three';
+import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useMemo, useRef } from 'react';
+import { BackSide, MathUtils, Mesh } from 'three';
 import { useTheme } from './ThemeContext';
 
 declare global {

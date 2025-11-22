@@ -1,8 +1,8 @@
+import { motion } from 'framer-motion';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import React from 'react';
 import { ThreeDollar } from './ThreeDollar';
 import { Button } from './ui/Button';
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (

@@ -1,7 +1,6 @@
-import React, { Suspense, useRef } from 'react';
+import { Center, Environment, Float, OrbitControls, Sparkles, Text3D } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text3D, Center, Float, OrbitControls, Sparkles, Environment } from '@react-three/drei';
-import * as THREE from 'three';
+import React, { Suspense, useRef } from 'react';
 import { Mesh } from 'three';
 import { useTheme } from './ThemeContext';
 

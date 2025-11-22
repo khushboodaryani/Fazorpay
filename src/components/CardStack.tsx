@@ -1,6 +1,6 @@
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { Building2, CreditCard, Landmark, ShieldCheck, Wallet } from 'lucide-react';
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
-import { Building2, Landmark, Wallet, ShieldCheck, CreditCard, PieChart, ArrowUpRight } from 'lucide-react';
 import { Button } from './ui/Button';
 
 const cards = [

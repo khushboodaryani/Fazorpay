@@ -1,5 +1,5 @@
+import { CheckCircle2, Server, Shield, XCircle, Zap } from 'lucide-react';
 import React from 'react';
-import { Shield, Clock, XCircle, CheckCircle2, Zap, Server } from 'lucide-react';
 
 export const BentoGrid: React.FC = () => {
   return (

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Check, Copy, Terminal } from 'lucide-react';
+import React, { useState } from 'react';
 import { Button } from './ui/Button';
 
 const codes = {

@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { motion, useMotionValue, animate } from 'framer-motion';
-import { Quote, ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ArrowRight, Quote } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const testimonials = [
   {
