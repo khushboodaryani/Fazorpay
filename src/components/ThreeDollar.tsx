@@ -20,7 +20,7 @@ const DollarSymbol = () => {
   const meshRef = useRef<Mesh>(null);
   const { theme } = useTheme();
 
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
       // Subtle bobbing is handled by Float, but we can add custom rotation
       // meshRef.current.rotation.y += 0.005;

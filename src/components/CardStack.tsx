@@ -135,10 +135,10 @@ const Card = ({
 
 export const CardStack: React.FC = () => {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ['start start', 'end end']
-  });
+  // const { scrollYProgress } = useScroll({
+  //   target: container,
+  //   offset: ['start start', 'end end']
+  // });
 
   return (
     <section ref={container} className="relative mt-20 mb-40 bg-slate-50 dark:bg-[#050505]">
