@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle } from 'lucide-react';
 import React from 'react';
 import { ThreeDollar } from './ThreeDollar';
 import { Button } from './ui/Button';
+import { motion } from 'framer-motion';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative h-full min-h-[400px] flex items-center justify-center"
+                    className="relative h-[500px] w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/5 to-transparent rounded-full blur-3xl" />
                     <ThreeDollar />
