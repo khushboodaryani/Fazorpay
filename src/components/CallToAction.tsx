@@ -20,9 +20,15 @@ export const CallToAction: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-white text-brand-600 hover:bg-brand-50 shadow-2xl hover:shadow-white/20 border-none w-full sm:w-auto">
-                Sign Up Now <ArrowRight className="ml-2" size={20} />
-            </Button>
+              <Button
+  variant="secondary"
+  size="lg"
+  className="text-sky-700 border border-brand-500 w-full sm:w-auto"
+>
+  Sign Up Now
+  <ArrowRight className="ml-2" size={20} />
+</Button>
+
              <Button size="lg" className="bg-brand-700 text-white hover:bg-brand-800 border border-brand-500 w-full sm:w-auto">
                 Contact Sales
             </Button>
