@@ -24,25 +24,25 @@ const GlobeMesh = () => {
   const meshRef = useRef<Mesh>(null);
   const { theme } = useTheme();
 
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.001;
     }
   });
 
-  const points = useMemo(() => {
-    const p = [];
-    for (let i = 0; i < 300; i++) {
-      const theta = MathUtils.randFloatSpread(360);
-      const phi = MathUtils.randFloatSpread(360);
-      p.push(
-        5 * Math.sin(theta) * Math.cos(phi),
-        5 * Math.sin(theta) * Math.sin(phi),
-        5 * Math.cos(theta)
-      );
-    }
-    return new Float32Array(p);
-  }, []);
+  // const points = useMemo(() => {
+  //   const p = [];
+  //   for (let i = 0; i < 300; i++) {
+  //     const theta = MathUtils.randFloatSpread(360);
+  //     const phi = MathUtils.randFloatSpread(360);
+  //     p.push(
+  //       5 * Math.sin(theta) * Math.cos(phi),
+  //       5 * Math.sin(theta) * Math.sin(phi),
+  //       5 * Math.cos(theta)
+  //     );
+  //   }
+  //   return new Float32Array(p);
+  // }, []);
 
   const color = theme === 'dark' ? '#6366f1' : '#0284c7';
 
